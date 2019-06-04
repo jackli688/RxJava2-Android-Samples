@@ -23,6 +23,7 @@ jobs:
       - run:
           name: Run Tests
           command: ./gradlew lint test
+          parallelism: 4    //ccelerate compilation speed 
       - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/ 
           path: app/build/reports
           destination: reports
