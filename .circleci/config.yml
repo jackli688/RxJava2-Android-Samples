@@ -4,7 +4,6 @@ jobs:
     working_directory: ~/code
     docker:
       - image: circleci/android:api-28-alpha
-    parallelism: 4    //accelerate compilation speed 
     environment:
       JVM_OPTS: -Xmx3200m
     steps:
@@ -24,6 +23,7 @@ jobs:
       - run:
           name: Run Tests
           command: ./gradlew lint test
+          parallelism: 4    //accelerate compilation speed 
       - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/ 
           path: app/build/reports
           destination: reports
