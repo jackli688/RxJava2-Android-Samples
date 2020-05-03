@@ -2,7 +2,8 @@
 
 * [README](README.md)
 * [Untitled](untitled.md)
-* [Contributing](contributing/README.md)
-  * [Untitled](contributing/untitled/README.md)
-    * [Hello My GitBook](contributing/untitled/untitled.md)
+* [Contributing](contributing.md)
+* [Untitled](untitled-1/README.md)
+  * [Untitled](untitled-1/untitled/README.md)
+    * [Hello My GitBook](untitled-1/untitled/untitled.md)
 
